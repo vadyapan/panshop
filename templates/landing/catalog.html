@@ -1,0 +1,106 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+<!-- Custom styles-->
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+{% block content %}
+<div class="section section1 new-items-container">
+  <div class="container">
+      <div class="row justify-content-center mx-auto">
+        <div class="col-lg-12">
+          <h1 class="h1-ctlg-top"><b>Каталог</b></h1>
+       </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1">
+            <div class="add-to-card-btn image-cart" id="all-items-container">
+                <button type="submit" id="all-items" class="flex-c-m s1-txt3 size3 button-in-catalog trans-04 where1" data-product_id="{{ product_image.product.id }}" data-name="{{ product_image.product.name }}" data-price="{{ product_image.product.price }}">
+                  <span class="all-refresh-catalog">Все</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="add-to-card-btn image-cart" id="phone-items-container">
+                <button type="submit" id="phone-items" class="flex-c-m s1-txt3 size3 button-in-catalog trans-04 where1" data-product_id="{{ product_image.product.id }}" data-name="{{ product_image.product.name }}" data-price="{{ product_image.product.price }}">
+                  <span class="phone-refresh-catalog">Смартфоны</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="add-to-card-btn image-cart" id="laptop-tems-container">
+                <button type="submit" id="laptop-tems" class="flex-c-m s1-txt3 size3 button-in-catalog trans-04 where1" data-product_id="{{ product_image.product.id }}" data-name="{{ product_image.product.name }}" data-price="{{ product_image.product.price }}">
+                 <span class="laptop-refresh-catalog">Ноутбуки</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="add-to-card-btn image-cart" id="accessory-items-container">
+                <button type="submit" id="accessory-items" class="flex-c-m s1-txt3 size3 button-in-catalog trans-04 where1" data-product_id="{{ product_image.product.id }}" data-name="{{ product_image.product.name }}" data-price="{{ product_image.product.price }}">
+                 <span class="accessory-refresh-catalog">Аксессуары</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="add-to-card-btn image-cart" id="discount-items-container">
+                <button type="submit" id="discount-items" class="flex-c-m s1-txt3 size3 button-in-catalog trans-04 where1" data-product_id="{{ product_image.product.id }}" data-name="{{ product_image.product.name }}" data-price="{{ product_image.product.price }}">
+                 <span class="discount-refresh-catalog">По скидке</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        </div>
+        <div class="wrapper-catalog"> 
+        <div class="row" id="all-refresh-container">
+        {% for product_image in products_images %} 
+        {% include 'landing/product_item_in_catalog.html' %} 
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section1 new-items-container d-none" id="phone-refresh-container">
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+    </div>
+      {% for product_image in products_images_phones %} 
+      {% include 'landing/product_item_in_catalog.html' %} 
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="section section1 new-items-container d-none" id="laptop-refresh-container">
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+    </div>
+      {% for product_image in products_images_laptops %} 
+      {% include 'landing/product_item_in_catalog.html' %} 
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="section section1 new-items-container d-none" id="accessory-refresh-container">
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-12">
+      </div>
+        {% for product_image in products_images_accessory %} 
+        {% include 'landing/product_item_in_catalog.html' %} 
+        {% endfor %}
+      </div>
+    </div>
+</div>
+<div class="section section1 new-items-container d-none" id="discount-refresh-container">
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-12">
+      </div>
+        {% for product_image in products_images_discount %} 
+        {% include 'landing/product_item_in_catalog.html' %} 
+        {% endfor %}
+      </div>
+    </div>
+</div>
+<div id="toTop"><svg width="100px" height="100px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#01B646" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(3.24,3.24), scale(0.73)"><rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 13.79C15.91 13.94 15.72 14.01 15.53 14.01C15.34 14.01 15.15 13.94 15 13.79L12 10.79L9 13.79C8.71 14.08 8.23 14.08 7.94 13.79C7.65 13.5 7.65 13.02 7.94 12.73L11.47 9.2C11.76 8.91 12.24 8.91 12.53 9.2L16.06 12.73C16.35 13.03 16.35 13.5 16.06 13.79Z" fill="#01B646"></path> </g></svg></div>
+{% endblock %}

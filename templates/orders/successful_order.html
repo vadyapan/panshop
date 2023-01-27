@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    <!-- Custom styles-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content %}
+    <div class="container container-product">
+        <br>
+            <div class="suc-order-img">
+                <svg fill="#01B646" width="150px" height="150px" viewBox="0 0 24 24" id="check-mark-circle" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><circle id="primary" cx="12" cy="12" r="10" style="fill: #55DF73;"></circle><path id="secondary" d="M11,15.5a1,1,0,0,1-.71-.29l-3-3a1,1,0,1,1,1.42-1.42L11,13.09l4.29-4.3a1,1,0,0,1,1.42,1.42l-5,5A1,1,0,0,1,11,15.5Z" style="fill: #ffffff;"></path></g></svg>
+                <p><h3>Спасибо! Заказ оформлен</h3></p>
+                <p><h5>Оператор перезвонит вам в ближайшее время для подтверждения заказа</h5></p>
+            </div>
+    </div>
+{% endblock %}

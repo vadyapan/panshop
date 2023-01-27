@@ -1,0 +1,165 @@
+{% load static %}
+<div class="container">
+  <footer class="py-footer">
+    <div class="row" id="rw-footer">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Разделы</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="http://panshop.site/" class="nav-link p-0 text-muted">Главная</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="http://panshop.site/catalog/" class="nav-link p-0 text-muted">Каталог</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="http://panshop.site/checkout/" class="nav-link p-0 text-muted">Корзина</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="http://panshop.site/event/" class="nav-link p-0 text-muted">Акции</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="http://panshop.site/delivery/" class="nav-link p-0 text-muted">Доставка</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Помощь</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Вопрос - ответ</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Горячая линия</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Чат</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Обратная связь</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Контакты</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">О нас</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Вакансии</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Стать партнером</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3 d-none" id="subs-footer">
+        <h5>Подпишись на новости</h5>
+        <p>Чтобы узнать о новых акциях и скидках.</p>
+        <form
+          id="form-subs"
+          action=""
+          method="post"
+          class="form-inline text-center"
+        >
+          {% csrf_token %}
+          <div class="row g-3 align-items-center mx-auto">
+            <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+              <div class="col-lg-7">
+                <span>{{ form.email }}</span> {{ form.name }}
+              </div>
+              <div class="col-lg">
+                <button
+                  type="submit" name="subsbutton"
+                  class="flex-c-m s1-txt3 size3 footer-btn trans-04 where1"
+                >
+                  Подписаться
+                </button>
+
+                <!-- Модальное окно -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="row">
+                        <div class="col text-center">
+                          <h4 class="modal-title" id="exampleModalLabel">
+                            Подписка оформлена!
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="modal-body suc-order-img">
+                        <svg
+                          width="130px"
+                          height="130px"
+                          viewBox="0 0 20 20"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#55DF73"
+                          style="margin-bottom: 4%"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <g id="layer1">
+                              <path
+                                d="M 2 3 L 2 4 L 19 4 L 19 11.050781 C 19.140925 11.021974 19.284143 11.000133 19.429688 10.996094 C 19.624569 10.990749 19.814149 11.017059 20 11.058594 L 20 3 L 2 3 z M 0 5 L 0 17 L 8.0488281 17 C 8.0003061 16.790054 7.9700001 16.578371 7.9804688 16.373047 C 7.9871293 16.24241 8.010572 16.121023 8.0351562 16 L 1.6621094 16 L 6.6367188 12.251953 L 5.8046875 11.626953 L 1 15.246094 L 1 6.7539062 L 7.9863281 12.017578 L 10.013672 12.017578 L 17 6.7539062 L 17 12.458984 L 17.710938 11.748047 C 17.799771 11.657128 17.89953 11.579511 18 11.503906 L 18 5 L 0 5 z M 1.6621094 6 L 16.337891 6 L 9.6796875 11.017578 L 8.3203125 11.017578 L 1.6621094 6 z M 12.195312 11.626953 L 11.363281 12.251953 L 14.695312 14.763672 L 15.410156 14.048828 L 12.195312 11.626953 z M 19.484375 12.996094 C 19.354615 12.999694 19.231345 13.053634 19.140625 13.146484 L 13.494141 18.792969 L 10.847656 16.146484 C 10.376401 15.655678 9.6498182 16.382262 10.140625 16.853516 L 13.140625 19.853516 C 13.33589 20.0487 13.652391 20.0487 13.847656 19.853516 L 19.847656 13.853516 C 20.172926 13.535513 19.939096 12.983623 19.484375 12.996094 z "
+                                style="
+                                  fill: #55df73;
+                                  fill-opacity: 1;
+                                  stroke: none;
+                                  stroke-width: 0px;
+                                "
+                              ></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div
+      class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+    >
+      <p>&copy; 2022 Все права защищены.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="link-dark" href="#"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter" /></svg
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a class="link-dark" href="#"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" /></svg
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a class="link-dark" href="#"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" /></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    <!-- Custom styles-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content %}
+    <div class="container container-product">
+        <br>
+            <div class="row">
+            <div class="col-6">
+                <img src="{% static 'img/newyear_23.jpeg' %}" class="d-block w-100 img-fluid">
+            </div>
+            <div class="col-6 text-center">
+                <p><h3>Акции</h3></p>
+                <hr>
+                <br>
+                <p><h5>Вводи промокод NEWYEAR23<span style="background-position: right top;">*</span> при оформлении и получай скидку 10% от заказа.</h5></p>
+                <br>
+                <h6>* промокод действует до 01.02.2023 года</h6>
+            </div>
+        </div>
+    </div>
+{% endblock %}

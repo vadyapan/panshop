@@ -1,0 +1,40 @@
+.h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.general-container {
+  background-image: url(../img/bg_image.jpg);
+  height: 100vh;
+}
+
+.top-container {
+  padding-top: 10%;
+  line-height: 32px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  color: #333333;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  opacity: 98%;
+}
+
+.how-btn {
+  padding: 3px 15px;
+  background-color: #866ddd;
+  border-radius: 5px;
+  border: white;
+  color: white;
+}
+
+.how-btn:hover {
+  padding: 3px 15px;
+  background-color: #785ddb;
+  border-radius: 5px;
+  border: white;
+  color: white;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    <!-- Custom styles-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content %}
+    <div class="container container-product">
+        <br>
+            <div class="row">
+            <div class="col-6">
+                <img src="{% static 'img/slider_delivery.jpeg' %}" class="d-block w-100 img-fluid">
+            </div>
+            <div class="col-6 text-center">
+                <p><h3>Доставка</h3></p>
+                <hr>
+                <br>
+                <p><h5>Мы бесплатно доставим товар при заказе от 5 000 рублей. В остальных случаях доставка оплачивается вами.</h5></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

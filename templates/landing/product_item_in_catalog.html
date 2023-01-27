@@ -1,0 +1,58 @@
+{% load static %}
+<div class="col-lg-3 p-1">
+  <div class="product-item">
+    <div class="main-image">
+      <a href="{% url 'product' product_image.product.id %}">
+        <img
+          src="{{ product_image.image.url }}"
+          class="img-responsive picture-main-image"
+        />
+      </a>
+    </div>
+    {% if product_image.product.discount %}
+    <div class="discount-container">
+      <span>Скидка {{product_image.product.discount}}%</span>
+    </div>
+    {% endif %}
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h4>{{ product_image.product.short_name }}</h4>
+        {% comment %}
+        <p>
+          <i>
+            {{ product_image.product.short_description|truncatechars_html:45 }}
+          </i>
+        </p>
+        {% endcomment %}
+        <div class="price">
+          <p>
+            <i
+              ><b>
+                <h4>{{ product_image.product.price|floatformat:"-3g" }} ₽</h4>
+              </b></i
+            >
+          </p>
+        </div>
+        <form
+          id="form_buying_product"
+          class="form-inline"
+          action="{% url 'basket_adding' %}"
+        >
+          {% csrf_token %}
+          <div class="add-to-card-btn image-cart">
+            <button
+              type="submit"
+              id="submit_btn"
+              class="flex-c-m s1-txt3 size3 plus-item-in-basket trans-04 where1"
+              data-product_id="{{ product_image.product.id }}"
+              data-name="{{ product_image.product.name }}"
+              data-price="{{ product_image.product.price }}"
+            >
+              <span class="name-add-cart">Добавить в корзину</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

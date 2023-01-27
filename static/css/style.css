@@ -1,0 +1,809 @@
+html,
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; 
+}
+
+.navbar-top {
+  min-height: 30px;
+  height: 20px;
+  border: none;
+  color: white;
+  padding: 2px;
+  padding-left: 100px;
+}
+
+.navbar {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-pad {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.toggle.navbtn{
+  border-color: gray;
+}
+
+.toggle.navbtn:hover{
+  border-color: white;
+}
+
+.footer {
+  position: relative;
+  margin-top: -180px;
+  height: 180px;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+p,
+li,
+label,
+input,
+span,
+button,
+text {
+  font-family: "Montserrat", sans-serif;
+}
+
+.picture-main-image {
+  max-width: 255px;
+  max-height: 255px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.discount-container {
+  position: absolute;
+  right: 50%;
+  top: 35%;
+  background-color: rgb(0, 182, 70);
+  width: 50%;
+  color: white;
+  padding: 3px;
+}
+
+.product-item {
+  height: 525px;
+  background-color: white;
+  border: 1px solid #866ddd;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+}
+
+.how-btn {
+  padding: 8px 15px;
+  background-color: #866ddd;
+  border-radius: 5px;
+  border: white;
+  color: white;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.how-btn:hover {
+  padding: 8px 15px;
+  background-color: #755ad9;
+  border-radius: 5px;
+  border: white;
+  color: white;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.h1-top {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.h1-ctlg-top {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navigation-btn {
+  padding: 8px 15px;
+  background-color: #333333;
+  border-radius: 5px;
+  border: white;
+  color: white;
+  margin-top: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation-btn:hover {
+  padding: 8px 15px;
+  background-color: white;
+  border-radius: 5px;
+  border: black;
+  color: black;
+  margin-top: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-delivery {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-btn {
+  padding: 8px 15px;
+  background-color: #333333;
+  border-radius: 5px;
+  border: white;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-btn:hover {
+  padding: 8px 15px;
+  background-color: #4b4b4b;
+  border-radius: 5px;
+  border: white;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.input-group {
+  font-family: "Montserrat", sans-serif;
+}
+
+.py-footer {
+  padding-top: 6rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.container-product {
+  margin-top: 45px;
+}
+
+.style-tab-content,
+  pad-product {
+  padding: 20px;
+}
+
+.basket-container {
+  position: relative;
+}
+
+.basket-items {
+  padding: 35px 20px 0px 0px;
+  position: absolute;
+  top: 53px;
+  width: 24%;
+  background-color: #333333;
+  border-radius: 10px;
+  color: white;
+  z-index: 99;
+}
+
+.basket-null {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.col-nmb-in-table {
+  width: 135px;
+}
+
+.tr-line {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.form-in-checkout {
+  padding-top: 40px;
+}
+
+.form-error {
+  color: red;
+}
+
+.image-cart svg {
+  fill: white;
+}
+
+.item-price h4 {
+  margin-top: 55px;
+}
+
+.td-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.suc-order-img {
+  text-align: center;
+}
+
+.plus-item-in-basket {
+  background-color: #866ddd;
+  border: white;
+  color: white;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  height: 42px;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.plus-item-in-basket:hover {
+  background-color: #333333;
+  border: white;
+  color: white;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  height: 42px;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.button-in-catalog {
+  background-color: rgb(0, 182, 70);
+  border: white;
+  color: white;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  height: 42px;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.button-in-catalog:hover {
+  background-color: #333333;
+  border: white;
+  color: white;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  height: 42px;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.phone-refresh-catalog {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.phone-refresh-catalog:after {
+  font-family: FontAwesome;
+  content: "\f10b";
+  font-size: 30px;
+  position: absolute;
+  opacity: 0;
+  top: -8px;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.phone-refresh-catalog {
+  padding-right: 20px;
+}
+
+.phone-refresh-catalog:after {
+  opacity: 1;
+  right: 0;
+}
+
+.laptop-refresh-catalog {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.laptop-refresh-catalog:after {
+  font-family: FontAwesome;
+  content: "\f109";
+  font-size: 25px;
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.laptop-refresh-catalog {
+  padding-right: 35px;
+}
+
+.laptop-refresh-catalog:after {
+  opacity: 1;
+  right: 0;
+}
+
+.accessory-refresh-catalog {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.accessory-refresh-catalog:after {
+  font-family: FontAwesome;
+  content: "\f025";
+  font-size: 25px;
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.accessory-refresh-catalog {
+  padding-right: 30px;
+}
+
+.accessory-refresh-catalog:after {
+  opacity: 1;
+  right: 0;
+}
+
+.discount-refresh-catalog {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.discount-refresh-catalog:after {
+  font-family: FontAwesome;
+  content: "\25";
+  font-size: 25px;
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.discount-refresh-catalog {
+  padding-right: 30px;
+}
+
+.discount-refresh-catalog:after {
+  opacity: 1;
+  right: 0;
+}
+
+.name-add-cart {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.name-add-cart:after {
+  font-family: FontAwesome;
+  content: "\f217";
+  font-size: 25px;
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.plus-item-in-basket:hover .name-add-cart {
+  padding-right: 30px;
+}
+
+.plus-item-in-basket:hover .name-add-cart:after {
+  opacity: 1;
+  right: 0;
+}
+
+.center-number {
+  height: 0px;
+  padding: 0px;
+}
+
+#name-item-in-table {
+  width: 50%;
+}
+
+.total-name {
+  margin-top: 6px;
+}
+
+.name-phone {
+  margin-top: 10px;
+}
+
+#exampleModalLabel {
+  margin-top: 25px;
+}
+
+.wrapper-catalog {
+  padding-top: 40px;
+}
+
+#all-items {
+  margin-left: 5px;
+}
+
+#phone-items {
+  margin-left: -3px;
+}
+
+#laptop-tems {
+  margin-left: -8px;
+}
+
+#accessory-items {
+  margin-left: -19px;
+}
+
+#discount-items {
+  margin-left: -12px;
+}
+
+.basket-items hr {
+  margin-left: -27px;
+  z-index: 1;
+}
+
+li {
+  list-style-type: none;
+}
+
+#toTop {
+  width: 100px;
+  padding: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.filter-style {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 32%);
+  margin-top: 16px;
+}
+
+#search-button-nav{
+  margin-left: -3%;
+}
+
+x-field{
+  display:inline;
+  position:relative;
+  width: 75%;
+}
+
+x-field .close {
+  position: absolute;
+  padding: 0px 18px 0px 5px;
+  right: 0;
+  margin-top: -31px;
+  background-color: white;
+}
+
+/* only screen */
+@media only screen and (max-width: 991px) {
+  
+  th,
+  td:nth-child(5) {
+    display: none;
+  }
+
+  .item-price{
+    text-align: center;
+  }
+
+  .textinput.textcount{
+    display: block;
+    margin : 0 auto;
+    width: 20%;
+  }
+
+  #label-count{
+    display: none;
+    z-index: 10;
+  }
+
+  .section-top{
+    margin-top: 10px;
+  }
+
+  #basket-items {
+    display: none;
+    z-index: 100;
+  }
+
+  #total-name {
+    margin-top: 25px;
+  }
+
+  #all-items {
+    margin-left: 0px;
+    z-index: 10;
+  }
+
+  #phone-items {
+    margin-left: 0px;
+    z-index: 10;
+  }
+  
+  #laptop-tems {
+    margin-left: 0px;
+    z-index: 10;
+  }
+  
+  #accessory-items {
+    margin-left: 0px;
+    z-index: 10;
+  }
+  
+  #discount-items {
+    margin-left: 0px;
+    z-index: 10;
+  }
+
+  #all-items-container {
+    text-align: center;
+    z-index: 99;
+    display: block;
+  }
+
+  #phone-items-container {
+    text-align: center;
+    z-index: 99;
+    display: block;
+  }
+
+  #laptop-tems-container {
+    text-align: center;
+    z-index: 99;
+    display: block;
+  }
+
+  #accessory-items-container {
+    text-align: center;
+    z-index: 99;
+    display: block;
+  }
+
+  #discount-items-container {
+    text-align: center;
+    z-index: 99;
+    display: block;
+  }
+
+  #Layer_1 {
+    display: none;
+    z-index: 10;
+  }
+
+  .table .col-nmb-in-table {
+    padding-top: 13px;
+    z-index: 10;
+  }
+
+  .navbar-toggler{
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .basket-container {
+    text-align: right;
+    margin-top: -48px;
+    width: 10%;
+    margin-left: 90%;
+  }
+
+  x-field .close {
+    position: absolute;
+    padding: 0px 35px 0px 10px;
+    right: 0;
+    margin-top: -37px;
+    background-color: white;
+  }
+
+  .textinput.textcount{
+    display: block;
+    margin : 0 auto;
+    width: 25%;
+  }
+
+  .text-center.product-in-basket-nmb{
+    padding: 10px 0px;
+  }
+
+  .form-control.ntSaveForms{
+    line-height: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 575px) {
+  
+  .table .col-nmb-in-table {
+    margin-top: 100px;
+    margin-left: -150px;
+    padding-bottom: 35px;
+    display: block;
+    z-index: 10;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .table .col-nmb-in-table {
+    margin-top: 145px;
+    margin-left: -140px;
+    padding-bottom: 35px;
+    display: block;
+    z-index: 10;
+  }
+
+  .textinput.textcount{
+    display: block;
+    margin : 0 auto;
+    width: 30%;
+  }
+
+}
+
+@media only screen and (max-width: 474px) {
+
+  .basket-container {
+    text-align: right;
+    margin-top: -48px;
+    width: 10%;
+    margin-left: 88%;
+    z-index: 10;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .textinput.textcount{
+    display: block;
+    margin : 0 auto;
+    width: 35%;
+  }
+
+}
+
+
+@media only screen and (max-width: 394px) {
+
+  .basket-container {
+    text-align: right;
+    margin-top: -48px;
+    width: 10%;
+    margin-left: 85%;
+    z-index: 10;
+  }
+
+  #name-item-in-table {
+    width: 36%;
+    z-index: 10;
+  }
+
+  .textinput.textcount{
+    display: block;
+    margin : 0 auto;
+    width: 40%;
+  }
+
+  .table .col-nmb-in-table {
+    margin-top: 200px;
+    margin-left: -140px;
+    padding-bottom: 35px;
+    display: block;
+    z-index: 10;
+  }
+
+}
+
+
+@media only screen and (max-width: 360px) {
+  
+  #phone-num-container {
+    margin-left: -72px;
+  }
+
+  .basket-container {
+    text-align: right;
+    margin-top: -48px;
+    width: 10%;
+    margin-left: 80%;
+    z-index: 10;
+  }
+
+  .textinput.textcount{
+    display: block;
+    margin : 0 auto;
+    width: 45%;
+  }
+
+  .table .col-nmb-in-table {
+    margin-top: 250px;
+    margin-left: -140px;
+    padding-bottom: 35px;
+    display: block;
+    z-index: 10;
+  }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+  .table .col-nmb-in-table {
+    margin-top: 280px;
+    margin-left: -140px;
+    padding-bottom: 35px;
+    display: block;
+    z-index: 10;
+  }
+
+}
+
+@media only screen and (max-width: 280px) {
+
+  #phone-num-container {
+    margin-left: -72px;
+  }
+
+  #name-item-in-table {
+    width: 0%;
+    z-index: 110;
+  }
+
+  .table .col-nmb-in-table {
+    padding-top: 45px;
+    z-index: 10;
+  }
+
+  .textinput.textcount{
+    display: block;
+    margin : 0 auto;
+    width: 50%;
+  }
+
+  x-field {
+    display: inline;
+    position: relative;
+    width: 83%;
+  }
+
+}

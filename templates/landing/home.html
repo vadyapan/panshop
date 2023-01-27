@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    <!-- Custom styles-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content %}
+    <div class="section-top">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="http://panshop.site/catalog/"><img src="{% static 'img/mainfon_top.jpeg' %}" class="d-block w-100 img-fluid" style="max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="http://panshop.site/event/"><img src="{% static 'img/newyear_23.jpeg' %}" class="d-block w-100 img-fluid" style="max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="http://panshop.site/delivery/"><img src="{% static 'img/slider_delivery.jpeg' %}" class="d-block w-100 img-fluid" style="max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;"></a>
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </div>
+    <div class="section section1 new-items-container">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+                    <p><h1 class="h1-top">Новые поступления</h1></p>
+            </div>
+                {% for product_image in products_images|slice:"8:12" %}
+                {% include 'landing/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section section-delivery">
+        <div>
+            <a href="http://panshop.site/delivery/"><img src="{% static 'img/delivery_small.jpeg' %}" class="w-100 img-fluid" style="max-width: 1300px;"></a>
+        </div>
+    </div>
+    <div class="section section1 new-items-container">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+                    <p><h1 class="h1-top">Смартфоны</h1></p>
+            </div>
+                {% for product_image in products_images_phones|slice:"0:4" %}
+                {% include 'landing/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section section1 new-items-container">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+                    <p><h1 class="h1-top">Ноутбуки</h1></p>
+            </div>
+                {% for product_image in products_images_laptops|slice:"0:4" %}
+                {% include 'landing/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div id="toTop"><svg width="100px" height="100px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#01B646" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(3.24,3.24), scale(0.73)"><rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 13.79C15.91 13.94 15.72 14.01 15.53 14.01C15.34 14.01 15.15 13.94 15 13.79L12 10.79L9 13.79C8.71 14.08 8.23 14.08 7.94 13.79C7.65 13.5 7.65 13.02 7.94 12.73L11.47 9.2C11.76 8.91 12.24 8.91 12.53 9.2L16.06 12.73C16.35 13.03 16.35 13.5 16.06 13.79Z" fill="#01B646"></path> </g></svg></div>
+{% endblock %}
