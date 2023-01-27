@@ -535,6 +535,10 @@ x-field .close {
     z-index: 10;
   }
 
+  .image-cart{
+    text-align: center;
+  }
+  
   .section-top{
     margin-top: 10px;
   }
