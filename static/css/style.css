@@ -21,8 +21,12 @@ body {
 }
 
 .nav-pad {
-  padding-top: 10px;
+  padding-top: 13px;
   padding-bottom: 0px;
+}
+
+.bur.tognav{
+  margin-right: 25px;
 }
 
 .toggle.navbtn{
@@ -506,18 +510,36 @@ x-field{
 
 x-field .close {
   position: absolute;
-  padding: 0px 18px 0px 5px;
+  padding: 0px 20px 0px 5px;
   right: 0;
-  margin-top: -31px;
+  margin-top: -34px;
   background-color: white;
+}
+
+.form-control.ntSaveForms{
+  line-height: 28px;
 }
 
 /* only screen */
 @media only screen and (max-width: 991px) {
-  
   th,
   td:nth-child(5) {
     display: none;
+  }
+
+  .basket-container {
+    text-align: right;
+    margin-top: -48px;
+    width: 10%;
+    margin-left: 90%;
+  }
+
+  x-field .close {
+    position: absolute;
+    padding: 0px 30px 0px 5px;
+    right: 0;
+    margin-top: -34px;
+    background-color: white;
   }
 
   .item-price{
@@ -535,10 +557,6 @@ x-field .close {
     z-index: 10;
   }
 
-  .image-cart{
-    text-align: center;
-  }
-  
   .section-top{
     margin-top: 10px;
   }
@@ -620,6 +638,11 @@ x-field .close {
   .navbar-toggler{
     z-index: 100;
   }
+
+  .image-cart{
+    text-align: center;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -698,7 +721,6 @@ x-field .close {
 }
 
 @media only screen and (max-width: 450px) {
-
   .textinput.textcount{
     display: block;
     margin : 0 auto;
@@ -783,7 +805,6 @@ x-field .close {
 }
 
 @media only screen and (max-width: 280px) {
-
   #phone-num-container {
     margin-left: -72px;
   }
@@ -809,5 +830,4 @@ x-field .close {
     position: relative;
     width: 83%;
   }
-
 }
