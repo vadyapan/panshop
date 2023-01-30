@@ -520,6 +520,11 @@ x-field .close {
   line-height: 28px;
 }
 
+input[type="text"]:focus{
+  box-shadow: none;
+  border-color: #c7c9cc;
+}
+
 /* only screen */
 @media only screen and (max-width: 991px) {
   th,
