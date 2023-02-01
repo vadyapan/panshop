@@ -71,6 +71,7 @@ def checkout(request):
 
                         product_in_basket.nmb = value
                         product_in_basket.order = order
+                        product_in_basket.is_active = False
                         product_in_basket.save(force_update=True)
 
                         ProductInOrder.objects.create(product=product_in_basket.product, nmb=product_in_basket.nmb,
