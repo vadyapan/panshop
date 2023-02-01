@@ -429,7 +429,7 @@ text {
 
 .center-number {
   height: 0px;
-  padding: 0px;
+  padding-top: 5px;
 }
 
 #name-item-in-table {
@@ -473,8 +473,7 @@ text {
 }
 
 .basket-items hr {
-  margin-left: -27px;
-  z-index: 1;
+  margin-left: -10px;
 }
 
 li {
@@ -636,7 +635,7 @@ input[type="text"]:focus{
   }
 
   .table .col-nmb-in-table {
-    padding-top: 13px;
+    padding-top: 8.5px;
     z-index: 10;
   }
 
