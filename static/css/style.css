@@ -523,6 +523,11 @@ input[type="text"]:focus{
   border-color: #c7c9cc;
 }
 
+input[type="email"]:focus{
+  box-shadow: none;
+  border-color: #c7c9cc;
+}
+
 .footer__menu--mobile{
   display: flex;
 }
