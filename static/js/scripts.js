@@ -190,7 +190,7 @@
     });
     }
   
-    var pagesWithScriptBasket = ["/event/", "/delivery/", ];
+    var pagesWithScriptBasket = ["/event/", "/delivery/", "/successful_order/",];
   
     if (pagesWithScriptBasket.indexOf(location.pathname) != -1) {
       $("#subs-footer").removeClass("d-none");
