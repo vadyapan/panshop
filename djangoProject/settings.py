@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-_6o5n-!%6))5aor487ynd1k82@a#vf=-lok#is6=_5@3-oy%w+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.panshop.site']
+ALLOWED_HOSTS = ['.panshop.site', 'http://panshop.site/']
 
 
 # Application definition
