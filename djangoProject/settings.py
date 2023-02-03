@@ -129,6 +129,8 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATIC_DIR, ]
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/c/cb75699/newsite/public_html/static'
+MEDIA_URL = 'products_images'
+MEDIA_ROOT = '/home/c/cb75699/newsite/public_html/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
